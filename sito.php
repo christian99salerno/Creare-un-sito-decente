@@ -8,7 +8,7 @@
 
 <body>
 
-<div style="float:left; width:100%;height:5%; text-align:center; font-size:20px; padding-top:10px">Benvenuto</div>
+<div style="width:100%;height:5%; text-align:center; font-size:20px; padding-top:10px">Benvenuto</div>
 
 <div class="pulsante">Home</div>
 
@@ -20,7 +20,18 @@
 
 <div class="pulsante">Live</div>
 
-<div id="divisione5"></div>
+
+
+<div class="divisioni"></div>
+
+<div class="divisioni"></div>
+
+<div class="divisioni"></div>
+
+<div class="divisioni"></div>
+
+<div class="divisioni"></div>	
+
 
 </body>
 

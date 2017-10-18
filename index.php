@@ -3,21 +3,24 @@
   <head>
     <title>Site</title>
 <link href="style.css" rel="stylesheet">
-</head>
+  </head>
 
 
 <?php
 
-$connessione = mysqli_connect(localhost,root,root);
-$selezione = mysqli_select_db(Games,$connessione);
+$connessione = mysqli_connect("localhost","root","root","Games");
 
-if(!$connessione) {
-   echo "Connection failed";
+if(!$connessione){
+  print "Connection failed\n";
 }
 
-echo "Connected successfully";
+else {
+  print "Connected successfully\n";
+}
 
-$query = mysqli_query("SELECT * FROM list_games_2017");
+
+$myquery = "SELECT * FROM list_games_2017";
+$result = mysqli_query($connessione,$myquery);
 
 ?>
 
@@ -25,33 +28,47 @@ $query = mysqli_query("SELECT * FROM list_games_2017");
 
 <div style="width:100%;height:5%; text-align:center; font-size:20px; padding-top:10px">Benvenuto</div>
 
-<div class="pulsante">Home</div>
+<div class="pulsante"><a href="home.php">Home</a></div>
 
-<div class="pulsante">Staff</div>
+<div class="pulsante"><a href="staff.php">Staff</a></div>
 
-<div class="pulsante">Community</div>
+<div class="pulsante"><a href="community.php">Community</a></div>
 
-<div class="pulsante">Gamers</div>
+<div class="pulsante"><a href="gamers.php">Gamers</a></div>
 
-<div class="pulsante">Live</div>
+<div class="pulsante"><a href="live.php">Live</a></div>
 
-<div id="divisione1"></div>
+<div style="float:left; width:50%; height:50%; margin-top:20px">
 
-<?php
 
-$dato = mysqli_fetch_assoc()
 
-?>
+<table border="1px" solid="000000">
 
-<div class="divisioni"></div>
+    <tr>
+      <td>TITOLO</td><td>GENERE</td><td>USCITA</td><td>PIATTAFORMA</td>
+    </tr>
 
-<div class="divisioni"></div>
+    <?php $dati = mysqli_fetch_assoc($result); ?>
 
-<div class="divisioni"></div>
+    <tr>
+      <td><?php echo $dati["TITOLO"]; ?></td>
+      <td><?php echo $dati["GENERE"]; ?></td>
+      <td><?php echo $dati["USCITA"]; ?></td>
+      <td><?php echo $dati["PIATTAFORMA"]; ?></td>
+    </tr>
 
-<div class="divisioni"></div>
+    <?php $dati = mysqli_fetch_assoc($result); ?>
 
-<div class="divisioni"></div>
+    <tr>
+      <td><?php echo $dati["TITOLO"]; ?></td>
+      <td><?php echo $dati["GENERE"]; ?></td>
+      <td><?php echo $dati["USCITA"]; ?></td>
+      <td><?php echo $dati["PIATTAFORMA"]; ?></td>
+    </tr>
+
+</table>
+
+</div>
 
 <?php
 

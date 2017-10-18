@@ -1,36 +1,28 @@
 .divisioni {
 
-width:20%; 
-height:20%; 
-margin-top:10px; 
-border:2px solid #777777;
-
-}
-
-#divisione1 {
-
-width:20%; 
-height:20%; 
-margin-top:50px; 
+width:20%;
+height:20%;
+margin-top:10px;
 border:2px solid #777777;
 
 }
 
 .pulsante {
- 
- float:left;
- width:20%;
- height:3%;
- text-align: center;
- color: #000000;
- margin-top:10px;
- padding-top:5px;
- border-radius:30px;
- background: #ffa500;
+
+float:left;
+width:20%;
+height:25px;
+text-align: center;
+color: #000000;
+margin-top:10px;
+padding-top:5px;
+border-radius:30px;
+background: #ffa500;
 
 }
 
-a 
+
+a
 
 {
 
@@ -38,7 +30,7 @@ color: black
 
 }
 
-a:hover 
+a:hover
 
 {
 

@@ -5,28 +5,22 @@
 <link href="style.css" rel="stylesheet">
   </head>
 
-
 <?php
 
-$connessione = mysqli_connect("localhost","root","root","Games");
+$connessione = mysqli_connect("localhost","root","root","Registrazioni");
 
 if(!$connessione){
-  print "Connection failed\n";
+  print "Connection failed";
 }
 
-else {
-  print "Connected successfully\n";
-}
-
-
-$myquery = "SELECT * FROM list_games_2017";
+$myquery = "SELECT * FROM Utenti";
 $result = mysqli_query($connessione,$myquery);
 
 ?>
 
 <body>
 
-<div style="width:100%;height:5%; text-align:center; font-size:20px; padding-top:10px">Benvenuto</div>
+<div style="width:100%; height:5%; text-align:center; font-size:20px; margin-top:20px">Benvenuto</div>
 
 <div class="pulsante"><a href="home.php">Home</a></div>
 
@@ -34,41 +28,38 @@ $result = mysqli_query($connessione,$myquery);
 
 <div class="pulsante"><a href="community.php">Community</a></div>
 
-<div class="pulsante"><a href="gamers.php">Gamers</a></div>
+<div class="pulsante"><a href="battaglia_navale.php">Battaglia Navale</a></div>
 
 <div class="pulsante"><a href="live.php">Live</a></div>
 
-<div style="float:left; width:50%; height:50%; margin-top:20px">
+<div style="width:50%; height:10%; margin-top:100px; font-size:20px">Entra a far parte della nostra Community</div>
 
+<form action="memorizza_dati.php" method="post">
 
+<input placeholder="Nome" name="nome">
 
-<table border="1px" solid="000000">
+</br></br>
 
-    <tr>
-      <td>TITOLO</td><td>GENERE</td><td>USCITA</td><td>PIATTAFORMA</td>
-    </tr>
+<input placeholder="Cognome" name="cognome">
 
-    <?php $dati = mysqli_fetch_assoc($result); ?>
+</br></br>
 
-    <tr>
-      <td><?php echo $dati["TITOLO"]; ?></td>
-      <td><?php echo $dati["GENERE"]; ?></td>
-      <td><?php echo $dati["USCITA"]; ?></td>
-      <td><?php echo $dati["PIATTAFORMA"]; ?></td>
-    </tr>
+<input placeholder="Username" name="username">
 
-    <?php $dati = mysqli_fetch_assoc($result); ?>
+</br></br>
 
-    <tr>
-      <td><?php echo $dati["TITOLO"]; ?></td>
-      <td><?php echo $dati["GENERE"]; ?></td>
-      <td><?php echo $dati["USCITA"]; ?></td>
-      <td><?php echo $dati["PIATTAFORMA"]; ?></td>
-    </tr>
+<input placeholder="Password" name="password">
 
-</table>
+</br></br>
 
-</div>
+Male<input type="radio" name="sesso" value="maschio">
+Female<input type="radio" name="sesso" value="femmina">
+
+</br></br>
+
+<input type="submit" nome="registrati" value="Registrati">
+
+</form>
 
 <?php
 

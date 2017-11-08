@@ -1,9 +1,10 @@
 <html>
 
-  <head>
+<head>
     <title>Site</title>
 <link href="style.css" rel="stylesheet">
-  </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
 
 <?php
 
@@ -19,6 +20,8 @@ $result = mysqli_query($connessione,$myquery);
 ?>
 
 <body>
+
+
 
 <div style="width:100%; height:5%; text-align:center; font-size:20px; margin-top:20px">Benvenuto</div>
 

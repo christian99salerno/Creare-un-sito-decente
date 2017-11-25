@@ -6,15 +6,25 @@ if(!$connessione){
   print "Connection failed";
 }
 
-$myquery = "SELECT * FROM Utenti";
-$result = mysqli_query($connessione,$myquery);
+?>
+
+<?php
+
+$nome=$_POST["nome"];
+$cognome=$_POST["cognome"];
+$username=$_POST["username"];
+$email=$_POST["email"];
+$password=md5($_POST["password"]);
+$sesso=$_POST["sesso"];
+
+$sql = "INSERT INTO Utenti (NOME, COGNOME, USERNAME, EMAIL, PASSWORD, SESSO)VALUES ('$nome','$cognome','$username','$email','$password','$sesso)";
+
+$result=mysqli_query($sql);
 
 ?>
 
 <?php
-echo $_POST["nome"];
-echo $_POST["cognome"];
-echo $_POST["username"];
-echo $_POST["password"];
-echo $_POST["sesso"];
+
+mysqli_close($connessione)
+
 ?>

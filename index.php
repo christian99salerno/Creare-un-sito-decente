@@ -14,17 +14,9 @@
 
 </head>
 
-<?php
-/*
-$connessione = mysqli_connect("localhost","root","root","Registrazioni");
-
-if(!$connessione){
-  print "Connection failed";
-}
-*/
-?>
-
 <body>
+
+<!--navigation bar-->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Forever Gamers</a>
@@ -50,16 +42,20 @@ if(!$connessione){
       </li>
     </ul>
 
-<!--barra di ricerca--> 
+<!--search bar--> 
 
 <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
 
+<!--end search bar-->
+
   </div>
 
 </nav>
+
+<!--close navigation bar-->
 
 <div class="container">
 
@@ -83,26 +79,6 @@ if(!$connessione){
 
 <form action="memorizza_dati.php" method="post">
 
-<div class="form-group">
- 
- <label for="nome">Nome</label>
- <input type="text" class="form-control" id="nome" placeholder="Nome" name="nome">
-
-</div>
-
-<div class="form-group">
- 
- <label for="cognome">Cognome</label>
- <input type="text" class="form-control" id="cognome" placeholder="Cognome" name="cognome">
-
-</div>
-
-<div class="form-group">
- 
- <label for="username">Username</label>
- <input type="text" class="form-control" id="username" placeholder="Username" name="username">
-
-</div>
 
 <div class="form-group">
  
@@ -146,10 +122,6 @@ if(!$connessione){
 </div>
 
 </div>
-
-<?php
-//mysqli_close($connessione);
-?>
 
 </div>
 

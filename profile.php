@@ -4,7 +4,7 @@
 
 <title>Site</title>
 
-<link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="bootstrap.min.css">
 
 <script src="jquery-3.2.1.js"></script>
 
@@ -43,7 +43,7 @@
       </li>
     </ul>
 
-<!--search bar--> 
+<!--search bar-->
 
 <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -60,7 +60,7 @@
 
 <div class="container">
 
-<img src="1.jpg" class="img-fluid" alt="Responsive image">
+<img src="2.jpeg" class="img-fluid" alt="Responsive image">
 
 <div class="row">
 <div class="col-6">
@@ -81,21 +81,21 @@
 <form action="change_profile.php" method="post">
 
 <div class="form-group">
- 
+
  <label for="nome">Nome</label>
  <input type="text" class="form-control" id="nome" placeholder="Nome" name="nome">
 
 </div>
 
 <div class="form-group">
- 
+
  <label for="cognome">Cognome</label>
  <input type="text" class="form-control" id="cognome" placeholder="Cognome" name="cognome">
 
 </div>
 
 <div class="form-group">
- 
+
  <label for="username">Username</label>
  <input type="text" class="form-control" id="username" placeholder="Username" name="username">
 

@@ -16,6 +16,7 @@
 
 <body>
 
+
 <!--navigation bar-->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -42,20 +43,20 @@
       </li>
     </ul>
 
-<!--search bar--> 
+<!--search bar-->
 
 <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
 
-<!--end search bar-->
-
   </div>
+
+<!--end search bar-->
 
 </nav>
 
-<!--close navigation bar-->
+<!--end navigation bar-->
 
 <div class="container">
 
@@ -81,7 +82,7 @@
 
 
 <div class="form-group">
- 
+
  <label for="email">Email</label>
  <input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
 
@@ -97,7 +98,7 @@
 <!--checkboxes-->
 
 <div class="form-check">
-  
+
   <label class="form-check-label">
     <input class="form-check-input" type="radio" name="sesso" id="male" value="m" checked> Male
   </label>
@@ -116,6 +117,30 @@
 <!--submit-->
 
 <input type="submit" class="btn btn-primary btn-block" nome="registrati" id="SignIn" value="Sign In">
+
+</form>
+
+<!--login-->
+
+<form action="profile.php" method="post">
+
+<div class="form-group">
+
+ <label for="email">Email</label>
+ <input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
+
+</div>
+
+<div class="form-group">
+
+<label for="password">Password</label>
+<input type="password" class="form-control" id="password" placeholder="Password" name="password">
+
+</div>
+
+<!--submit-->
+
+<input type="submit" class="btn btn-primary btn-block" nome="accedi" id="SignUp" value="Sign Up">
 
 </form>
 

@@ -1,3 +1,15 @@
+<?php
+
+  $connessione = mysqli_connect("localhost","root","root","Registrazioni");
+
+  if(!$connessione){
+    print "Connection failed";
+  }
+
+  session_start();
+
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -7,6 +19,8 @@
 <title>Site</title>
 
 <link rel="stylesheet" href="bootstrap.min.css">
+
+<link rel="stylesheet" href="animate.css">
 
 <script src="jquery-3.2.1.js"></script>
 
@@ -18,51 +32,85 @@
 
 <body>
 
-
-<!--navigation bar-->
+<!-- navigation bar -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Forever Gamers</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="staff.php">Staff</a>
-      </li>
-      <li class="nav-item">
-<a class="nav-link" href="community.php">Community</a>
-      </li>
-      <li class="nav-item">
-<a class="nav-link" href="battaglia_navale.php">Battaglia Navale</a>
-      </li>
-      <li class="nav-item">
-<a class="nav-link" href="games.php">Games</a>
-      </li>
-    </ul>
+  
+<a class="navbar-brand animated bounce" href="#">Forever Gamers</a>
+  
+<button class="navbar-toggler" type="button" data-toggle="collapse" 
+data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+aria-expanded="false" aria-label="Toggle navigation">
 
-<!--search bar-->
+<span class="navbar-toggler-icon"></span>
+
+</button>
+  
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+<ul class="navbar-nav mr-auto">
+  
+  <li class="nav-item active">
+    <a class="nav-link" 
+    href="index.php">Home<span class="sr-only">(current)</span></a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link" href="staff.php">Staff</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="community.php">Community</a>
+   </li>
+   
+  <li class="nav-item">
+    <a class="nav-link" href="battaglia_navale.php">Battaglia Navale</a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link" href="games.php">Games</a>
+  </li>
+
+  <!--registrazione-->
+  
+  <li class="nav-item">
+    <a class="nav-link" href="registrazione.php">Registrazione</a>
+  </li>
+  
+  
+ 
+  <!--logout-->
+
+  <?php
+
+  if($_SESSION["autorized"]==1){ ?>
+  
+  <li class="nav-item">
+    
+    <form action="logout.php" method="post">
+      
+      <input type="submit" class="btn btn-primary btn-block" 
+      nome="uscita" id="logout" value="Logout">
+    
+    </form>
+  
+    </li> <?php } ?>
+
+</ul>
+      
+
+<!-- search bar -->
 
 <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
 
-<!--end search bar-->
-<ul class="navbar-nav mr-auto">
-      
-      <li class="nav-item">
-        <a class="nav-link" href="registrazione.php">Registrazione</a>
-      </li>
-    </ul>
+ <input class="form-control mr-sm-2" type="search"
+ placeholder="Search" aria-label="Search">
+ 
+ <button class="btn btn-outline-success my-2 my-sm-0" 
+ type="submit">Search</button>
+ 
+</form> <!-- end search bar -->
 
+</div>
 
-  </div>
-
-
-</nav>
-
+</nav> <!-- end navigation bar -->

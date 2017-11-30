@@ -2,6 +2,14 @@
 require_once("header.php");
 ?>
 
+<?php
+ session_start();
+ if($_SESSION["autorized"]==0)
+ {
+    Header( "Location:index.php" );
+ }
+?>
+
 <div class="container">
 
 <img src="2.jpeg" class="img-fluid" alt="Responsive image">
@@ -72,11 +80,8 @@ require_once("header.php");
 
 </form>
 
-<form action="logout.php" method="post">
 
-<input type="submit" class="btn btn-primary btn-block" nome="uscita" id="logout" value="Logout">
 
-</form>
 
 </div>
 

@@ -11,7 +11,7 @@ require_once("header.php");
 
 <!--login-->
 
-<form action="profile.php" method="post">
+<form action="login.php" method="post">
 
 <div class="form-group">
 

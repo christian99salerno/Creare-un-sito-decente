@@ -12,9 +12,8 @@ if(!$connessione){
 
 $email=$_POST["email"];
 $password=md5($_POST["password"]);
-$sesso=$_POST["sesso"];
 
-$sql = "INSERT INTO Utenti (EMAIL, PASSWORD, SESSO) VALUES ('$email','$password','$sesso')";
+$sql = "INSERT INTO Utenti (EMAIL, PASSWORD) VALUES ('$email','$password')";
 
 $result=mysqli_query($connessione, $sql);
 
@@ -23,5 +22,7 @@ $result=mysqli_query($connessione, $sql);
 <?php
 
 mysqli_close($connessione)
+
+  header("Location: index.php");
 
 ?>

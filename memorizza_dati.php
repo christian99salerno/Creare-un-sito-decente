@@ -21,8 +21,6 @@ $result=mysqli_query($connessione, $sql);
 
 <?php
 
-mysqli_close($connessione)
-
   header("Location: index.php");
 
 ?>

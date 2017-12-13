@@ -36,7 +36,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   
-<a class="navbar-brand animated bounce" href="#">Forever Gamers</a>
+<a class="navbar-brand animated bounceInRight" href="#">Forever Gamers</a>
   
 <button class="navbar-toggler" type="button" data-toggle="collapse" 
 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
@@ -76,7 +76,12 @@ aria-expanded="false" aria-label="Toggle navigation">
   <li class="nav-item">
     <a class="nav-link" href="registrazione.php">Registrazione</a>
   </li>
+ 
+  <!--Amministratore Utenti-->
   
+  <li>
+    <a class="nav-link" href="utenti.html">Admin</a>
+  </li>
   
  
   <!--logout-->
@@ -89,7 +94,7 @@ aria-expanded="false" aria-label="Toggle navigation">
     
     <form action="logout.php" method="post">
       
-      <input type="submit" class="btn btn-primary btn-block" 
+      <input type="submit" class="btn btn-primary" 
       nome="uscita" id="logout" value="Logout">
     
     </form>

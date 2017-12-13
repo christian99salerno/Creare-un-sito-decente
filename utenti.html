@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html>
+  <head>
+    <script src="jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="animate.css">
+    <meta charset='utf-8'>
+    
+    <script>
+
+    $(document).ready( function () {
+      console.log('ready');
+
+      var utentiTable = $('#utenti');
+      var utentiTBody = utentiTable.find('tbody');
+
+      $.get('utenti.php', function (data) {
+        //console.log('data', data);
+        data = JSON.parse(data)
+        //console.log('data', data);
+        data.forEach( function (utente) {
+          console.log(utente);
+          var tr = $('<tr>',{ 'data-id':'utente' + utente.ID });
+          var td = $('<td>');
+          $('<td>').text(utente.ID).appendTo(tr);
+          $('<td>').text(utente.NOME).appendTo(tr);
+          $('<td>').text(utente.COGNOME).appendTo(tr);
+          $('<td>').text(utente.USERNAME).appendTo(tr);
+          $('<td>').text(utente.EMAIL).appendTo(tr);
+          $('<td>').text(utente.PASSWORD).appendTo(tr);
+          $('<td>').text(utente.SESSO).appendTo(tr);
+          $('<button>', { class: "btn btn-danger btn-block" }).html('&times;').appendTo(td).appendTo(tr);
+          tr.appendTo(utentiTBody);
+        });
+      });
+      utentiTable.on('click', 'button', function () {
+      var tr=$(this).closest('tr');
+      var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+      tr.addClass('animated slideOutRight').one(animationEnd, function () {
+      $(this).remove();
+      });
+      var id=tr.data('id').substring(6);
+      $.post('droputente.php',{ID:id})
+      });
+  }); 
+    </script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <table class="table" id="utenti">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Password (Hash)</th>
+            <th>Sesso</th>
+            <th>Drop</th>
+          </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+      </table>
+      
+    </div>
+  
+  </body>
+
+</html>

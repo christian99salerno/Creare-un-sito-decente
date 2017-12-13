@@ -4,9 +4,9 @@ require_once("header.php");
 
 <div class="container">
 
-<img src="1.jpg" class="img-fluid" alt="Responsive image">
+<!--<img src="#.jpg" class="img-fluid" alt="Responsive image">-->
 
-<div class="row">
+<div class="row justify-content-md-center">
 <div class="col-6">
 
 <div class="jumbotron">
@@ -14,11 +14,6 @@ require_once("header.php");
 <h4>Entra a far parte della nostra Community</h4>
 
 </div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-6">
 
 <!--form-->
 

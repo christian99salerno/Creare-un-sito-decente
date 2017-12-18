@@ -2,7 +2,7 @@
 require_once("header.php");
 ?>
 
-<div class="container">
+<div class="container mb-1">
 
 <img src="1.jpg" class="img-fluid" alt="Responsive image">
 

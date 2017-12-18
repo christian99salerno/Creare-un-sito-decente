@@ -94,7 +94,7 @@ aria-expanded="false" aria-label="Toggle navigation">
     
     <form action="logout.php" method="post">
       
-      <input type="submit" class="btn btn-primary" 
+      <input type="submit" class="btn btn-outline-info" 
       nome="uscita" id="logout" value="Logout">
     
     </form>

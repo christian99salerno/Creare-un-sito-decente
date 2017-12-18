@@ -38,6 +38,7 @@ require_once("header.php");
 
  $dati=mysqli_fetch_assoc($result);
 
+
 ?>
 
 
@@ -45,33 +46,33 @@ require_once("header.php");
 
 <form action="salva_dati.php" method="post">
 
-<input type="hidden" class="form-control" id="ID" value="<?php $dati['ID'] ?>" name="ID">
+<input type="hidden" class="form-control" id="ID" value="<?php echo $dati['ID'] ?>" name="ID">
 
 <div class="form-group">
 
  <label for="nome">Nome</label>
- <input type="text" class="form-control" id="nome" value="<?php if ($dati['NOME']) echo $dati['NOME'] ?>" placeholder="<?php echo $dati['NOME'] ?>" name="nome">
+ <input type="text" class="form-control" id="nome" value="<?php echo $dati['NOME'] ?>" name="nome">
 
 </div>
 
 <div class="form-group">
 
  <label for="cognome">Cognome</label>
- <input type="text" class="form-control" id="cognome" placeholder="<?php echo $dati['COGNOME'] ?>" name="cognome">
+ <input type="text" class="form-control" id="cognome" value="<?php echo $dati['COGNOME'] ?>" name="cognome">
 
 </div>
 
 <div class="form-group">
 
  <label for="username">Username</label>
- <input type="text" class="form-control" id="username" value="<?php $dati['USERNAME'] ?>" placeholder="<?php echo $dati['USERNAME'] ?>" name="username">
+ <input type="text" class="form-control" id="username" value="<?php echo $dati['USERNAME'] ?>" name="username">
 
 </div>
 
 <div class="form-group">
 
  <label for="email">Email</label>
- <input type="email" class="form-control" id="email" value="<?php $dati['EMAIL'] ?>" placeholder="<?php echo $dati['EMAIL'] ?>" name="email">
+ <input type="email" class="form-control" id="email" value="<?php echo $dati['EMAIL'] ?>" name="email">
 
 </div>
 
@@ -117,7 +118,7 @@ require_once("header.php");
 
 <?php } ?>
 
-<?php if($dati['SESSO']!='m' or $dati['SESSO']!='f'){ ?>
+<?php if(!$dati['SESSO'] == 'm' or !$dati['SESSO'] == 'f') { ?>
 
  <div class="form-check">
    

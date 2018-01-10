@@ -1,5 +1,7 @@
 <?php
+
 require_once("header.php");
+
 ?>
 
 <div class="container mb-1">
@@ -36,9 +38,10 @@ require_once("header.php");
 </div>
 
 </div>
-
 </div>
 
 <?php
+
 require_once("footer.php");
+
 ?>

@@ -1,12 +1,8 @@
 <?php
 
-  $connessione = mysqli_connect("localhost","root","root","Registrazioni");
+require_once("connessione.php");
 
-  if(!$connessione){
-    print "Connection failed";
-  }
-
-  ?>
+?>
 
 <?php
 
@@ -34,4 +30,3 @@ else{
     Header("Location:index.php");
         }
 ?>
-

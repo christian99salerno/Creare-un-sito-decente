@@ -1,10 +1,6 @@
 <?php
 
-$connessione = mysqli_connect("localhost","root","root","Registrazioni");
-
-if(!$connessione){
-  print "Connection failed";
-}
+require_once("connessione.php");
 
 ?>
 

@@ -1,5 +1,7 @@
 <?php
+
 require_once("header.php");
+
 ?>
 
 <?php
@@ -38,9 +40,7 @@ require_once("header.php");
 
  $dati=mysqli_fetch_assoc($result);
 
-
 ?>
-
 
 <!--form-->
 
@@ -77,8 +77,8 @@ require_once("header.php");
 </div>
 
 <!--checkboxes-->
- 
-<?php if($dati['SESSO']=='m'){ ?>  
+
+<?php if($dati['SESSO']=='m'){ ?>
 
  <div class="form-check">
 
@@ -92,16 +92,16 @@ require_once("header.php");
 
  <label class="form-check-label">
  <input class="form-check-input" type="radio" name="sesso" id="female" value="f"> Female
- </label> 
- 
+ </label>
+
  </div>
- 
+
 <?php } ?>
 
 <?php if($dati['SESSO']=='f'){ ?>
 
  <div class="form-check">
-   
+
  <label class="form-check-label">
  <input class="form-check-input" type="radio" name="sesso" id="male" value="m"> Male
  </label>
@@ -113,7 +113,7 @@ require_once("header.php");
  <label class="form-check-label">
  <input class="form-check-input" type="radio" name="sesso" id="female" value="f" checked> Female
  </label>
-    
+
  </div>
 
 <?php } ?>
@@ -121,7 +121,7 @@ require_once("header.php");
 <?php if(!$dati['SESSO'] == 'm' or !$dati['SESSO'] == 'f') { ?>
 
  <div class="form-check">
-   
+
  <label class="form-check-label">
  <input class="form-check-input" type="radio" name="sesso" id="male" value="m"> Male
  </label>
@@ -133,7 +133,7 @@ require_once("header.php");
  <label class="form-check-label">
  <input class="form-check-input" type="radio" name="sesso" id="female" value="f"> Female
  </label>
-    
+
  </div>
 
 <?php } ?>
@@ -149,5 +149,7 @@ require_once("header.php");
 </div>
 
 <?php
+
 require_once("footer.php");
+
 ?>

@@ -1,10 +1,6 @@
 <?php
 
-  $connessione = mysqli_connect("localhost","root","root","Registrazioni");
-
-  if(!$connessione){
-    print "Connection failed";
-  }
+require_once("connessione.php");
 
   session_start();
 
@@ -35,26 +31,26 @@
 <!-- navigation bar -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  
+
 <a class="navbar-brand animated bounceInRight" href="#">Forever Gamers</a>
-  
-<button class="navbar-toggler" type="button" data-toggle="collapse" 
-data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+
+<button class="navbar-toggler" type="button" data-toggle="collapse"
+data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 aria-expanded="false" aria-label="Toggle navigation">
 
 <span class="navbar-toggler-icon"></span>
 
 </button>
-  
+
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    
+
 <ul class="navbar-nav mr-auto">
-  
+
   <li class="nav-item active">
-    <a class="nav-link" 
+    <a class="nav-link"
     href="index.php">Home<span class="sr-only">(current)</span></a>
   </li>
-  
+
   <li class="nav-item">
     <a class="nav-link" href="staff.php">Staff</a>
   </li>
@@ -62,47 +58,47 @@ aria-expanded="false" aria-label="Toggle navigation">
   <li class="nav-item">
     <a class="nav-link" href="community.php">Community</a>
    </li>
-   
+
   <li class="nav-item">
     <a class="nav-link" href="battaglia_navale.php">Battaglia Navale</a>
   </li>
-  
+
   <li class="nav-item">
     <a class="nav-link" href="games.php">Games</a>
   </li>
 
   <!--registrazione-->
-  
+
   <li class="nav-item">
     <a class="nav-link" href="registrazione.php">Registrazione</a>
   </li>
- 
+
   <!--Amministratore Utenti-->
-  
+
   <li>
     <a class="nav-link" href="utenti.html">Admin</a>
   </li>
-  
- 
+
+
   <!--logout-->
 
   <?php
 
   if($_SESSION["autorized"]==1){ ?>
-  
+
   <li class="nav-item">
-    
+
     <form action="logout.php" method="post">
-      
-      <input type="submit" class="btn btn-outline-info" 
+
+      <input type="submit" class="btn btn-outline-info"
       nome="uscita" id="logout" value="Logout">
-    
+
     </form>
-  
+
     </li> <?php } ?>
 
 </ul>
-      
+
 
 <!-- search bar -->
 
@@ -110,10 +106,10 @@ aria-expanded="false" aria-label="Toggle navigation">
 
  <input class="form-control mr-sm-2" type="search"
  placeholder="Search" aria-label="Search">
- 
- <button class="btn btn-outline-success my-2 my-sm-0" 
+
+ <button class="btn btn-outline-success my-2 my-sm-0"
  type="submit">Search</button>
- 
+
 </form> <!-- end search bar -->
 
 </div>

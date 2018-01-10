@@ -1,14 +1,6 @@
 <?php
 
-#ini_set('display_errors', 1);
-#ini_set('display_startup_errors', 1);
-#error_reporting(E_ALL | E_STRICT);
-
-$connessione = mysqli_connect("localhost","root","root","Registrazioni");
-
-if(!$connessione){
-  print "Connection failed";
-}
+require_once("connessione.php");
 
 ?>
 
@@ -53,12 +45,22 @@ $c5=", SESSO='$sesso'";
 
 $sql = "UPDATE Utenti SET".$c1.$c2.$c3.$c4.$c5." WHERE ID='$id'";
 
+if(!$email==$_SESSION['email']) {
+
+$check=1;
+
+}
+
 $result=mysqli_query($connessione, $sql);
 
-?>
+if($check==1)
 
-<?php
+require_once("logout.php");
+
+else{
 
   header("Location: profile.php");
+
+}
 
 ?>

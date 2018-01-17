@@ -51,34 +51,49 @@ aria-expanded="false" aria-label="Toggle navigation">
     href="index.php">Home<span class="sr-only">(current)</span></a>
   </li>
 
-  <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Menù
-        </a>
+  <li class="nav-item">
+    <a class="nav-link" href="games.php">Games</a>
+  </li>
 
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="community.php">Community</a>
-          <a class="dropdown-item" href="games.php">Games</a>
-          <!--<div class="dropdown-divider"></div>-->
-          <a class="dropdown-item" href="staff.php">Staff</a>
-        </div>
+  <li class="nav-item">
+    <a class="nav-link" href="community.php">Community</a>
   </li>
 
   <li class="nav-item">
     <a class="nav-link" href="battaglia_navale.php">Battaglia Navale</a>
   </li>
 
+  <li class="nav-item">
+    <a class="nav-link" href="staff.php">Staff</a>
+  </li>
+
   <!--registrazione-->
+
+  <?php
+
+  if(!$_SESSION["autorized"]==1){ ?>
 
   <li class="nav-item">
     <a class="nav-link" href="registrazione.php">Registrazione</a>
-  </li>
+  </li> <?php } ?>
 
-  <!--Amministratore Utenti-->
+  <!--Amministratore Utenti
 
-  <li>
+  <li class="nav-item">
     <a class="nav-link" href="utenti.html">Admin</a>
-  </li>
+  </li> -->
+
+  <!--profile-->
+
+  <?php
+
+  if($_SESSION["autorized"]==1){ ?>
+
+  <li class="nav-item">
+      <a class="nav-link text-success" href="profile.php"><?php echo $_SESSION['email']?></a>
+  </li> <?php } ?>
+
+  </ul>
 
   <!--logout-->
 
@@ -86,35 +101,18 @@ aria-expanded="false" aria-label="Toggle navigation">
 
   if($_SESSION["autorized"]==1){ ?>
 
-  <li class="nav-item">
-
     <form action="logout.php" method="post">
 
-      <input class="btn btn-outline-warning" type="submit"
+      <input class="btn btn-danger" type="submit"
       nome="uscita" id="logout" value="Logout">
 
     </form>
 
-    </li> <?php } ?>
+  <?php } ?>
 
-   <!--profile-->
+ <!-- search bar
 
-    <?php
-
-    if($_SESSION["autorized"]==1){ ?>
-
-    <li class="nav-item">
-
-      <a class="btn btn-outline-info" href="profile.php">Profile</a>
-
-    </li> <?php } ?>
-
-</ul>
-
-
-<!-- search bar -->
-
-<form class="form-inline my-2 my-lg-0">
+ <form class="form-inline my-2 my-lg-0">
 
  <input class="form-control mr-sm-2" type="search"
  placeholder="Search" aria-label="Search">
@@ -122,7 +120,9 @@ aria-expanded="false" aria-label="Toggle navigation">
  <button class="btn btn-outline-success my-2 my-sm-0"
  type="submit">Search</button>
 
-</form> <!-- end search bar -->
+ </form>
+
+ end search bar -->
 
 </div>
 

@@ -4,7 +4,7 @@ require_once("header.php");
 
 ?>
 
-<div class="container mt-2">
+<div class="container mb-1 mt-2">
 
 <img src="1.jpg" class="img-fluid" alt="Responsive image">
 
@@ -22,7 +22,7 @@ require_once("header.php");
 <div class="form-group">
 
 <label class="text-light" for="email">Email</label>
-<input type="email" class="form-control" id="email" 
+<input type="email" class="form-control" id="email"
 placeholder="E-mail" name="email">
 
 </div>
@@ -30,14 +30,14 @@ placeholder="E-mail" name="email">
 <div class="form-group">
 
 <label class="text-light" for="password">Password</label>
-<input type="password" class="form-control" id="password" 
+<input type="password" class="form-control" id="password"
 placeholder="Password" name="password">
 
 </div>
 
 <!--submit-->
 
-<input type="submit" class="btn btn-success btn-block" 
+<input type="submit" class="btn btn-success btn-block"
 nome="accedi" id="Login" value="Login">
 
 </form>

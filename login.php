@@ -22,7 +22,7 @@ if (($dati['EMAIL'] == $email)&&($dati['PASSWORD']==$password))
 $_SESSION["email"]=$email;
 $_SESSION["password"]=$password;
 $_SESSION["autorized"]=1;
-Header("Location:profile.php");
+Header("Location:index.php");
 exit;
         }
 else{

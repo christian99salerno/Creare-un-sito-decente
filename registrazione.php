@@ -2,9 +2,9 @@
 require_once("header.php");
 ?>
 
-<div class="container">
+<div class="container mb-1">
 
-<!--<img src="#.jpg" class="img-fluid" alt="Responsive image">-->
+<img src="3.jpg" class="img-fluid" alt="Responsive image">
 
 <div class="row justify-content-md-center">
 <div class="col-6">

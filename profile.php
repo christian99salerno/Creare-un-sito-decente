@@ -12,24 +12,16 @@ require_once("header.php");
  }
 ?>
 
-<div class="container mb-1">
+<div class="container mt-2">
 
 <img src="2.jpg" class="img-fluid" alt="Responsive image">
 
 <div class="row">
 <div class="col-6">
 
-<div class="jumbotron mt-1">
+<div class="jumbotron mt-5 bg-dark">
 
-<h4>Completa la tua Registrazione</h4>
-
-</div>
-
-</div>
-</div>
-
-<div class="row">
-<div class="col-6">
+<h2 class="text-success">Completa la tua Registrazione</h2>
 
 <?php
 
@@ -50,28 +42,28 @@ require_once("header.php");
 
 <div class="form-group">
 
- <label for="nome">Nome</label>
+ <label class="text-light" for="nome">Nome</label>
  <input type="text" class="form-control" id="nome" value="<?php echo $dati['NOME'] ?>" name="nome">
 
 </div>
 
 <div class="form-group">
 
- <label for="cognome">Cognome</label>
+ <label class="text-light" for="cognome">Cognome</label>
  <input type="text" class="form-control" id="cognome" value="<?php echo $dati['COGNOME'] ?>" name="cognome">
 
 </div>
 
 <div class="form-group">
 
- <label for="username">Username</label>
+ <label class="text-light" for="username">Username</label>
  <input type="text" class="form-control" id="username" value="<?php echo $dati['USERNAME'] ?>" name="username">
 
 </div>
 
 <div class="form-group">
 
- <label for="email">Email</label>
+ <label class="text-light" for="email">Email</label>
  <input type="email" class="form-control" id="email" value="<?php echo $dati['EMAIL'] ?>" name="email">
 
 </div>
@@ -82,17 +74,17 @@ require_once("header.php");
 
  <div class="form-check">
 
- <label class="form-check-label">
- <input class="form-check-input" type="radio" name="sesso" id="male" value="m" checked> Male
- </label>
+ <input class="form-check-input" type="radio" name="sesso"
+ id="male" value="m" checked>
+ <label class="form-check-label text-light" for"male">Male</label>
 
  </div>
 
  <div class="form-check">
 
- <label class="form-check-label">
- <input class="form-check-input" type="radio" name="sesso" id="female" value="f"> Female
- </label>
+ <input class="form-check-input" type="radio" name="sesso"
+ id="female" value="f">
+ <label class="form-check-label text-light" for="female">Female</label>
 
  </div>
 
@@ -102,17 +94,17 @@ require_once("header.php");
 
  <div class="form-check">
 
- <label class="form-check-label">
- <input class="form-check-input" type="radio" name="sesso" id="male" value="m"> Male
- </label>
+ <input class="form-check-input" type="radio" name="sesso"
+ id="male" value="m">
+ <label class="form-check-label text-light" for"male">Male</label>
 
  </div>
 
  <div class="form-check">
 
- <label class="form-check-label">
- <input class="form-check-input" type="radio" name="sesso" id="female" value="f" checked> Female
- </label>
+ <input class="form-check-input" type="radio" name="sesso"
+ id="female" value="f" checked>
+ <label class="form-check-label text-light" for="female">Female</label>
 
  </div>
 
@@ -122,17 +114,17 @@ require_once("header.php");
 
  <div class="form-check">
 
- <label class="form-check-label">
- <input class="form-check-input" type="radio" name="sesso" id="male" value="m"> Male
- </label>
+ <input class="form-check-input" type="radio" name="sesso"
+ id="male" value="m">
+ <label class="form-check-label text-light" for="male">Male</label>
 
  </div>
 
  <div class="form-check">
 
- <label class="form-check-label">
- <input class="form-check-input" type="radio" name="sesso" id="female" value="f"> Female
- </label>
+ <input class="form-check-input" type="radio" name="sesso"
+ id="female" value="f">
+ <label class="form-check-label text-light" for="female">Female</label>
 
  </div>
 
@@ -140,10 +132,13 @@ require_once("header.php");
 
 <!--submit-->
 
-<input type="submit" class="btn btn-primary btn-block" nome="salva" id="save" value="Save">
+<input type="submit" class="btn btn-success btn-block" nome="salva" id="save" value="Save">
 
 </form>
 
+</div>
+
+</div>
 </div>
 
 </div>

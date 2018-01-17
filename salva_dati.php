@@ -53,7 +53,7 @@ $check=1;
 
 $result=mysqli_query($connessione, $sql);
 
-if($check==1)
+if(!$check==1)
 
 require_once("logout.php");
 

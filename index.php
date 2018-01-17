@@ -4,7 +4,7 @@ require_once("header.php");
 
 ?>
 
-<div class="container mb-1">
+<div class="container mt-2">
 
 <img src="1.jpg" class="img-fluid" alt="Responsive image">
 
@@ -13,31 +13,40 @@ require_once("header.php");
 
 <!--login-->
 
+<div class="jumbotron mt-5 bg-dark">
+
+<h2 class=text-success>Login</h2>
+
 <form action="login.php" method="post">
 
 <div class="form-group">
 
- <label for="email">Email</label>
- <input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
+<label class="text-light" for="email">Email</label>
+<input type="email" class="form-control" id="email" 
+placeholder="E-mail" name="email">
 
 </div>
 
 <div class="form-group">
 
-<label for="password">Password</label>
-<input type="password" class="form-control" id="password" placeholder="Password" name="password">
+<label class="text-light" for="password">Password</label>
+<input type="password" class="form-control" id="password" 
+placeholder="Password" name="password">
 
 </div>
 
 <!--submit-->
 
-<input type="submit" class="btn btn-primary btn-block" nome="accedi" id="Login" value="Login">
+<input type="submit" class="btn btn-success btn-block" 
+nome="accedi" id="Login" value="Login">
 
 </form>
 
 </div>
 
 </div>
+</div>
+
 </div>
 
 <?php

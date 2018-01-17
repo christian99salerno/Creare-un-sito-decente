@@ -32,7 +32,7 @@ require_once("connessione.php");
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-<a class="navbar-brand animated bounceInRight" href="#">Forever Gamers</a>
+<a class="navbar-brand animated bounceInRight" href="index.php">Forever Gamers</a>
 
 <button class="navbar-toggler" type="button" data-toggle="collapse"
 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -51,20 +51,21 @@ aria-expanded="false" aria-label="Toggle navigation">
     href="index.php">Home<span class="sr-only">(current)</span></a>
   </li>
 
-  <li class="nav-item">
-    <a class="nav-link" href="staff.php">Staff</a>
-  </li>
+  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Menù
+        </a>
 
-  <li class="nav-item">
-    <a class="nav-link" href="community.php">Community</a>
-   </li>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="community.php">Community</a>
+          <a class="dropdown-item" href="games.php">Games</a>
+          <!--<div class="dropdown-divider"></div>-->
+          <a class="dropdown-item" href="staff.php">Staff</a>
+        </div>
+  </li>
 
   <li class="nav-item">
     <a class="nav-link" href="battaglia_navale.php">Battaglia Navale</a>
-  </li>
-
-  <li class="nav-item">
-    <a class="nav-link" href="games.php">Games</a>
   </li>
 
   <!--registrazione-->
@@ -79,7 +80,6 @@ aria-expanded="false" aria-label="Toggle navigation">
     <a class="nav-link" href="utenti.html">Admin</a>
   </li>
 
-
   <!--logout-->
 
   <?php
@@ -90,10 +90,22 @@ aria-expanded="false" aria-label="Toggle navigation">
 
     <form action="logout.php" method="post">
 
-      <input type="submit" class="btn btn-outline-info"
+      <input class="btn btn-outline-warning" type="submit"
       nome="uscita" id="logout" value="Logout">
 
     </form>
+
+    </li> <?php } ?>
+
+   <!--profile-->
+
+    <?php
+
+    if($_SESSION["autorized"]==1){ ?>
+
+    <li class="nav-item">
+
+      <a class="btn btn-outline-info" href="profile.php">Profile</a>
 
     </li> <?php } ?>
 

@@ -70,65 +70,31 @@ require_once("header.php");
 
 <!--checkboxes-->
 
-<?php if($dati['SESSO']=='m'){ ?>
+ <div class="row">
+ <div class="col-3 offset-3">
 
  <div class="form-check">
 
  <input class="form-check-input" type="radio" name="sesso"
- id="male" value="m" checked>
+ id="male" value="m" <?php if($dati['SESSO']=='m') echo checked ?>>
  <label class="form-check-label text-light" for"male">Male</label>
 
  </div>
 
+ </div> 
+
+ <div class="col-3">
+
  <div class="form-check">
 
  <input class="form-check-input" type="radio" name="sesso"
- id="female" value="f">
+ id="female" value="f" <?php if($dati['SESSO']=='f') echo checked ?>>
  <label class="form-check-label text-light" for="female">Female</label>
 
  </div>
 
-<?php } ?>
-
-<?php if($dati['SESSO']=='f'){ ?>
-
- <div class="form-check">
-
- <input class="form-check-input" type="radio" name="sesso"
- id="male" value="m">
- <label class="form-check-label text-light" for"male">Male</label>
-
  </div>
-
- <div class="form-check">
-
- <input class="form-check-input" type="radio" name="sesso"
- id="female" value="f" checked>
- <label class="form-check-label text-light" for="female">Female</label>
-
  </div>
-
-<?php } ?>
-
-<?php if(!$dati['SESSO'] == 'm' or !$dati['SESSO'] == 'f') { ?>
-
- <div class="form-check">
-
- <input class="form-check-input" type="radio" name="sesso"
- id="male" value="m">
- <label class="form-check-label text-light" for="male">Male</label>
-
- </div>
-
- <div class="form-check">
-
- <input class="form-check-input" type="radio" name="sesso"
- id="female" value="f">
- <label class="form-check-label text-light" for="female">Female</label>
-
- </div>
-
-<?php } ?>
 
 <!--submit-->
 

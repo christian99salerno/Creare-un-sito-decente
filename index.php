@@ -10,7 +10,9 @@ require_once("header.php");
 <div class="col-6">
 
 <h3>Benvenuto</h3>
+
 <p>
+
 Divertiti in questo sito per appassionati videogiocatori.</br>
 Registrati ed entra a far parte di una grande community che condivide</br>
 le tue stesse passioni.</br>
@@ -21,6 +23,7 @@ Vota i tuoi preferiti e parla di loro con altri utenti iscritti</br>
 al sito nelle discussioni.</br>
 Non smettere mai di vivere avventure nel mondo dei</br>
 videogames.
+
 </p>
 
 </div>

@@ -84,7 +84,7 @@ aria-expanded="false" aria-label="Toggle navigation">
  
   <li class="nav-item">
     <a class="nav-link" href="registrazione.php">
-    <i class="fa fa-user-plus" aria-hidden="true"></i>Registrazione
+    <i class="fa fa-user-plus" aria-hidden="true"></i> Registrazione
     </a>
   </li>
 

@@ -39,20 +39,12 @@ videogames.</p>
 <div class="row zelda">
 <div class="col-12 px-0">
 
-<div class="card" style="z-index:10; margin-top:18rem; margin-left:18rem; width:18rem;">
-<img class="card-img-top" src="g1.jpg">
+<div class="card" style="z-index:10; margin-top:5rem; margin-left:5rem; width:18rem;">
+<img class="card-img-top" src="g1-card.jpg">
 <div class="card-body">
-<h3 class="card-title">Zelda</h3>
-<h3>Zelda</h3>
-<h3>Zelda</h3>
-<h3>Zelda</h3>
-<h3>Zelda</h3>
-<h3>Zelda</h3>
-<h3>Zelda</h3>
-<h3>Zelda</h3>
-<h3>Zelda</h3>
-<h3>Zelda</h3>
-<h3>Zelda</h3>
+<h3 class="card-title">The Legend of Zelda: Breath of the Wild</h3>
+<p>The Legend of Zelda: Breath of the Wild è l'esempio di come Nintendo abbia persone tra le sue fila in grado di trasformare i successi del passato, con i loro elementi distintivi, in capolavori del presente, e perché no, anche del futuro. Breath of the Wild è infatti la migliore espressione di una tradizione videoludica che, pur avendo dovuto fare i conti con una recente massificazione, a tratti alienante, che ne ha segnato indelebilmente l'evoluzione, è riuscita a trovare finalmente la sua dimensione nel panorama di un presente quantomai difficile da decifrare.</p>
+<p class="text-warning	">Spaziogames</p>
 </div>
 </div>
 

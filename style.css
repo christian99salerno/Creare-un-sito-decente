@@ -16,9 +16,6 @@
 .zelda
 {
 
-  background-image:url("g1.jpg");
+  background-image:url("g1-background.png");
   background-size:100%;
-  overflow:visible;
-  height:700px;
-   
 }

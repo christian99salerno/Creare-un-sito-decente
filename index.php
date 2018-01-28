@@ -44,7 +44,7 @@ videogames.</p>
 <div class="card-body">
 <h3 class="card-title">The Legend of Zelda: Breath of the Wild</h3>
 <p>The Legend of Zelda: Breath of the Wild è l'esempio di come Nintendo abbia persone tra le sue fila in grado di trasformare i successi del passato, con i loro elementi distintivi, in capolavori del presente, e perché no, anche del futuro. Breath of the Wild è infatti la migliore espressione di una tradizione videoludica che, pur avendo dovuto fare i conti con una recente massificazione, a tratti alienante, che ne ha segnato indelebilmente l'evoluzione, è riuscita a trovare finalmente la sua dimensione nel panorama di un presente quantomai difficile da decifrare.</p>
-<p class="text-warning	">Spaziogames</p>
+<p class="text-danger">Spaziogames</p>
 </div>
 </div>
 

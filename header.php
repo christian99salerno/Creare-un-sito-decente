@@ -2,8 +2,6 @@
 
 require_once("connessione.php");
 
-  session_start();
-
 ?>
 
 <!DOCTYPE html>
@@ -80,7 +78,7 @@ aria-expanded="false" aria-label="Toggle navigation">
   
 <?php
 
-  if(!$_SESSION["autorized"]==1){ ?>
+  if(!isset($_SESSION['autorized']) or !$_SESSION["autorized"]==1){ ?>
  
   <li class="nav-item">
     <a class="nav-link" href="registrazione.php">
@@ -100,11 +98,11 @@ aria-expanded="false" aria-label="Toggle navigation">
 
 <?php
 
- if($_SESSION["autorized"]==1){ ?>
+ if(isset($_SESSION['autorized']) and $_SESSION["autorized"]==1){ ?>
    <li class="nav-item dropdown">
        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-       <i class="fa fa-user-circle-o"></i> Ciao <?php if ($_SESSION["nome"]) { 
+       <i class="fa fa-user-circle-o"></i>Ciao <?php if ($_SESSION["nome"]) { 
                                                          echo $_SESSION['nome']; }
                                                       else { 
                                                          echo $_SESSION['email']; }?>

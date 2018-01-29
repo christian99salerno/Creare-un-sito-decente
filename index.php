@@ -56,7 +56,7 @@ videogames.</p>
 
 <!--login-->
 
-<?php if(!$_SESSION["autorized"]==1){ ?>
+<?php if(!isset($_SESSION["autorized"]) or !$_SESSION["autorized"]==1){ ?>
 
 <div class="jumbotron mt-5 bg-dark">
 

@@ -5,7 +5,6 @@ require_once("header.php");
 ?>
 
 <?php
- session_start();
  if($_SESSION["autorized"]==0)
  {
     Header( "Location:index.php" );
@@ -76,7 +75,7 @@ require_once("header.php");
  <div class="form-check">
 
  <input class="form-check-input" type="radio" name="sesso"
- id="male" value="m" <?php if($dati['SESSO']=='m') echo checked ?>>
+ id="male" value="m" <?php if($dati['SESSO']=='m') echo 'checked'; ?>>
  <label class="form-check-label text-light" for"male">Male</label>
 
  </div>
@@ -88,7 +87,7 @@ require_once("header.php");
  <div class="form-check">
 
  <input class="form-check-input" type="radio" name="sesso"
- id="female" value="f" <?php if($dati['SESSO']=='f') echo checked ?>>
+ id="female" value="f" <?php if($dati['SESSO']=='f') echo 'checked'; ?>>
  <label class="form-check-label text-light" for="female">Female</label>
 
  </div>

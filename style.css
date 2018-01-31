@@ -1,8 +1,9 @@
-.header
+.background
 {
 
-  background-image:url("background.png");
-  background-size:100%;
+  background-image:url("background.jpg");
+  background-size:100%; 
+  background-repeat:no-repeat;
 
 }
 
@@ -16,6 +17,7 @@
 .zelda
 {
 
-  background-image:url("g1-background.png");
+  background-image:url("g1-background.jpg");
   background-size:100%;
+  background-repeat:no-repeat;
 }

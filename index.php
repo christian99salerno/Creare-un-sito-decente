@@ -4,9 +4,9 @@ require_once("header.php");
 
 ?>
 
-<div class="container-fluid mt-2">
+<div class="container-fluid mt-2 mb-2">
 
-<div class="row justify-content-center header">
+<div class="row justify-content-center background">
 <div class="col-8">
 
 <div class="jumbotron mt-5 trasparenza text-light text-center">
@@ -18,16 +18,19 @@ Divertiti in questo sito per appassionati videogiocatori.
 Registrati ed entra a far parte di una grande community che condivide
 le tue stesse passioni.</p>
 
+<hr>
+
 <p class="lead">
 Cerca i videogiochi che più ti piacciono ed informati sulle loro
 caratteristiche e sul loro modo di stupire i giocatori
 che vi si avvicinano.</p>
 
+<hr>
+
 <p class="lead">
 Vota i tuoi preferiti e parla di loro con altri utenti iscritti
 al sito nelle discussioni.
 Non smettere mai di vivere avventure nel mondo dei
-videogames.</p>
 
 </div>
 

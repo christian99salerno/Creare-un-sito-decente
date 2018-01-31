@@ -2,23 +2,20 @@
 require_once("header.php");
 ?>
 
-<div class="container mb-1">
+<div class="container mt-2 mb-2">
 
-<img src="3.jpg" class="img-fluid" alt="Responsive image">
+<img src="registrazione.jpg" class="img-fluid" alt="Responsive image">
 
 <div class="row justify-content-md-center">
 <div class="col-6">
 
-<div class="jumbotron">
+<div class="jumbotron mt-5">
 
 <h4>Entra a far parte della nostra Community</h4>
-
-</div>
 
 <!--form-->
 
 <form action="memorizza_dati.php" method="post">
-
 
 <div class="form-group">
 
@@ -43,6 +40,7 @@ require_once("header.php");
 
 </div>
 
+</div>
 </div>
 
 </div>

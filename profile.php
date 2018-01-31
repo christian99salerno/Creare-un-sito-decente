@@ -11,9 +11,9 @@ require_once("header.php");
  }
 ?>
 
-<div class="container mt-2">
+<div class="container mt-2 mb-2">
 
-<img src="2.jpg" class="img-fluid" alt="Responsive image">
+<img src="profile.jpg" class="img-fluid" alt="Responsive image">
 
 <div class="row">
 <div class="col-6">

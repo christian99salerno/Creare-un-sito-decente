@@ -28,7 +28,7 @@ require_once("connessione.php");
 
 </head>
 
-<body>
+<body class="black">
 
 <!-- navigation bar -->
 

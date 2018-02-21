@@ -1,12 +1,12 @@
 <?php
+
 require_once("header.php");
+
 ?>
 
-<div class="container mt-2 mb-2">
+<div class="container-fluid">
 
-<img src="registrazione.jpg" class="img-fluid" alt="Responsive image">
-
-<div class="row justify-content-md-center">
+<div class="row justify-content-center">
 <div class="col-6">
 
 <div class="jumbotron mt-5">
@@ -17,24 +17,21 @@ require_once("header.php");
 
 <form action="memorizza_dati.php" method="post">
 
-<div class="form-group">
+<div class="form-group mt-5">
 
- <label for="email">Email</label>
  <input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
 
 </div>
 
-<div class="form-group">
+<div class="form-group mt-5">
 
-<label for="password">Password</label>
 <input type="password" class="form-control" id="password" placeholder="Password" name="password">
 
 </div>
 
-
 <!--submit-->
 
-<input type="submit" class="btn btn-primary btn-block" nome="registrati" id="SignUp" value="Sign Up">
+<input type="submit" class="mt-5 btn btn-primary btn-block" nome="registrati" id="SignUp" value="Sign Up">
 
 </form>
 

@@ -1,23 +1,53 @@
+.color_background
+{
+  background-color:black;
+}
+
 .background
 {
 
   background-image:url("background.jpg");
   background-size:100%; 
   background-repeat:no-repeat;
+}
 
+.backgroundProfile
+{
+  background-image:url("profile.jpg");
+  background-size:100%; 
+  background-repeat:no-repeat;
 }
 
 .trasparenza
 {
-
   background-color:rgba(55,55,75,0.3);
+}
 
+.trasparenzaProfile
+{
+  background-color:rgba(0,0,0,0.3);
 }
 
 .zelda
 {
 
   background-image:url("g1-background.jpg");
+  background-size:100%;
+  background-repeat:no-repeat;
+}
+
+.dark
+{
+
+  background-image:url("g2-background.jpg");
+  background-size:100%;
+  background-repeat:no-repeat;
+}
+
+.horizon
+{
+
+  background-image:url("g3-background.jpg");
   background-size:100%;
   background-repeat:no-repeat;
 }

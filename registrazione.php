@@ -11,27 +11,29 @@ require_once("header.php");
 
 <div class="jumbotron mt-5">
 
-<h4>Entra a far parte della nostra Community</h4>
+<h4>Registrati</h4>
 
 <!--form-->
 
 <form action="memorizza_dati.php" method="post">
 
-<div class="form-group mt-5">
+<div class="form-group">
 
- <input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
+<label>Email</label>
+<input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
 
 </div>
 
-<div class="form-group mt-5">
+<div class="form-group">
 
+<label>Password</label>
 <input type="password" class="form-control" id="password" placeholder="Password" name="password">
 
 </div>
 
 <!--submit-->
 
-<input type="submit" class="mt-5 btn btn-primary btn-block" nome="registrati" id="SignUp" value="Sign Up">
+<input type="submit" class="btn btn-primary btn-block" nome="registrati" id="SignUp" value="Sign Up">
 
 </form>
 
